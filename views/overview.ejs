@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/home.css"></link>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="/overview">overview</a></li>
+        </ul>
+    </nav>
+    
+<% for(let i = 0; i<rustBases.length; i++){ %>
+    <div class="rust-base">
+  <p><%= rustBases[i].title %></p>
+  <p><%= rustBases[i].content %></p>
+  <p><%= rustBases[i].Creator %></p>
+  <a href="specific/<%=i%>">Go to a Specific base</a>
+</div>
+<%}%>
+</html>
